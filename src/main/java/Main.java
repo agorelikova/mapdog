@@ -1,12 +1,8 @@
-import javastudy.Mapdog;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import static javastudy.Mapdog.printHelp;
-import static javastudy.Mapdog.printSortedByKey;
-import static javastudy.Mapdog.printSorterByValue;
+import static javastudy.MapDog.*;
 
 public class Main {
 
@@ -31,10 +27,10 @@ public class Main {
       x = ans.nextLine();
       switch (x) {
         case "1":
-          printSortedByKey(dogs);
+          print(sortByKey(dogs));
           break;
         case "2":
-          printSorterByValue(dogs);
+          print(sortByValue(dogs));
           break;
         case "exit":
         case "end":
