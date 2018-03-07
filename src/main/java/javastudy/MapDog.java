@@ -27,7 +27,7 @@ public class MapDog {
   }
 
   public static void print(Stream<Map.Entry<Integer, String>> inputStream) {
-    log.info("Сортировка по значению");
+   //log.info("Сортировка по значению");
     inputStream.map(Map.Entry::toString)
       .forEach(log::info);
   }
